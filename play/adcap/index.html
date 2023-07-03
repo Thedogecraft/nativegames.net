@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en-us">
+ 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | AdVenture Capitalist!</title>
+    <script> if(top!=self){
+        top.location.replace(document.location);
+        window.open('https://840p.ml','_blank');window.setTimeout(function(){this.close();},1000);
+        alert("STOP STEALING GAMES FROM 840P.ML.")
+    } </script>
+    
+    <script type="text/javascript">
+    if ( window.self !== window.top ) {
+        window.top.location.href=window.location.href;
+    }
+    </script>
+    <script> var iframes = document.getElementsByTagName('iframe');
+    
+    for (var i = 0; i < iframes.length; i++) {
+      var iframe = iframes[i];
+    
+      try {
+        // Try to access the contentWindow property
+        var iframeWindow = iframe.contentWindow;
+    
+        // If we can access the contentWindow property, block the iframe
+         window.open('https://840p.ml','_blank');window.setTimeout(function(){this.close();},1000);
+      } catch (e) {
+        // If we can't access the contentWindow property, the iframe is from a different origin and cannot be blocked
+      }
+    }
+    </script>
+    
+    <script> if (window.self !== window.top) {
+      // This page is being displayed in an iframe
+      window.top.location.href = window.location.href;
+    } </script>
+    <script>
+    if( top != self )
+        delete top.onbeforeunload;
+    </script>
+    <script>
+    var iframes = document.getElementsByTagName('iframe');
+    
+    for (var i = 0; i < iframes.length; i++) {
+      var iframe = iframes[i];
+    
+      // Set the sandbox attribute to 'allow-scripts'
+      iframe.sandbox = 'allow-scripts';
+    }
+    </script>
+    <meta http-equiv="X-Frame-Options" content="deny">
+	<script async src="https://arc.io/widget.min.js#5XPTU21J"><script data-goatcounter="https://parcoil.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script></script><script src="maintenance.js/"></script><script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+<script> if(top!=self){
+    top.location.replace(document.location);
+    window.open('https://840p.ml','_blank');window.setTimeout(function(){this.close();},1000);
+    alert("STOP STEALING GAMES FROM 840P.ML.")
+} </script>
+
+<script type="text/javascript">
+if ( window.self !== window.top ) {
+    window.top.location.href=window.location.href;
+}
+</script>
+<script> var iframes = document.getElementsByTagName('iframe');
+
+for (var i = 0; i < iframes.length; i++) {
+  var iframe = iframes[i];
+
+  try {
+    // Try to access the contentWindow property
+    var iframeWindow = iframe.contentWindow;
+
+    // If we can access the contentWindow property, block the iframe
+     window.open('https://840p.ml','_blank');window.setTimeout(function(){this.close();},1000);
+  } catch (e) {
+    // If we can't access the contentWindow property, the iframe is from a different origin and cannot be blocked
+  }
+}
+</script>
+
+<script> if (window.self !== window.top) {
+  // This page is being displayed in an iframe
+  window.top.location.href = window.location.href;
+} </script>
+<script>
+if( top != self )
+    delete top.onbeforeunload;
+</script>
+<script>
+var iframes = document.getElementsByTagName('iframe');
+
+for (var i = 0; i < iframes.length; i++) {
+  var iframe = iframes[i];
+
+  // Set the sandbox attribute to 'allow-scripts'
+  iframe.sandbox = 'allow-scripts';
+}
+</script>
+<meta http-equiv="X-Frame-Options" content="deny">
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8NZMM8WN9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W8NZMM8WN9');
+</script>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+</head>
+ 
+<body class="template">
+    <div class="webgl-content">
+        <div id="unityContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);">
+          
+      <canvas  class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" id="canvas"width=335 height=667 style="width: 100%; height: 100%; background: #231F20"></canvas>
+      
+    <div id="loadingBox">
+        <div id="bgBar"></div>
+        <div id="progressBar"></div>
+        <p id="loadingInfo">Loading...</p>
+    </div>
+    <script type='text/javascript'>
+        // connect to canvas
+        var Module = {
+            TOTAL_MEMORY: 201326592,
+            filePackagePrefixURL: "Release/",
+            memoryInitializerPrefixURL: "Release/",
+            preRun: [],
+            postRun: [],
+            print: (function() {
+                return function(text) {
+                    console.log(text);
+                };
+            })(),
+            printErr: function(text) {
+                console.error(text);
+            },
+            canvas: document.getElementById('canvas'),
+            progress: null,
+            setStatus: function(text) {
+                if (this.progress == null) {
+                    if (typeof UnityProgress != 'function')
+                        return;
+                    this.progress = new UnityProgress(canvas);
+                }
+                if (!Module.setStatus.last) Module.setStatus.last = {
+                    time: Date.now(),
+                    text: ''
+                };
+                if (text === Module.setStatus.text) return;
+                this.progress.SetMessage(text);
+                var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
+                if (m)
+                    this.progress.SetProgress(parseInt(m[2]) / parseInt(m[4]));
+                if (text === "")
+                    this.progress.Clear()
+            },
+            totalDependencies: 0,
+            monitorRunDependencies: function(left) {
+                this.totalDependencies = Math.max(this.totalDependencies, left);
+                Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies - left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+            }
+        };
+        Module.setStatus('Downloading (0.0/1)');
+    </script>
+    <script src="Release/UnityConfig.js"></script>
+    <script src="Release/fileloader.js"></script>
+    <script>
+        if (!(!Math.fround)) {
+            var script = document.createElement('script');
+            script.src = "Release/webgl.js";
+            document.body.appendChild(script);
+        } else {
+            var codeXHR = new XMLHttpRequest();
+            codeXHR.open('GET', 'Release/webgl.js', true);
+            codeXHR.onload = function() {
+                var code = codeXHR.responseText;
+                if (!Math.fround) {
+                    try {
+                        console.log('optimizing out Math.fround calls');
+                        var m = /var ([^=]+)=global\.Math\.fround;/.exec(code);
+                        var minified = m[1];
+                        if (!minified) throw 'fail';
+                        var startAsm = code.indexOf('// EMSCRIPTEN_START_FUNCS');
+                        var endAsm = code.indexOf('// EMSCRIPTEN_END_FUNCS');
+                        var asm = code.substring(startAsm, endAsm);
+                        do {
+                            var moar = false; // we need to re-do, as x(x( will not be fixed
+                            asm = asm.replace(new RegExp('[^a-zA-Z0-9\\$\\_]' + minified + '\\(', 'g'), function(s) {
+                                moar = true;
+                                return s[0] + '('
+                            });
+                        } while (moar);
+                        code = code.substring(0, startAsm) + asm + code.substring(endAsm);
+                        code = code.replace("'use asm'", "'almost asm'");
+                    } catch (e) {
+                        console.log('failed to optimize out Math.fround calls ' + e)
+                    }
+                }
+                var blob = new Blob([code], {
+                    type: 'text/javascript'
+                });
+                codeXHR = null;
+                var src = URL.createObjectURL(blob);
+                var script = document.createElement('script');
+                script.src = URL.createObjectURL(blob);
+                script.onload = function() {
+                    URL.revokeObjectURL(script.src);
+                };
+                document.body.appendChild(script);
+            };
+            codeXHR.send(null);
+        }
+    </script>
+</body>
+ 
+</html>
