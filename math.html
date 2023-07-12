@@ -40,7 +40,7 @@
 
 <body class="text-center" style="background: var(--bs-black);">
     <nav class="navbar navbar-dark navbar-expand-md sticky-top py-3" id="mainNav" style="background: rgb(0,0,0);">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"></a><a href="./"><img class="img-fluid" src="assets/img/n.png" width="46" height="50"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"></a><a href="./"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><img class="img-fluid" src="assets/img/n.png" width="46" height="50">
             <div class="collapse navbar-collapse" id="navcol-1" style="text-align: center;transform: perspective(0px);">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active fw-bold" href="./" style="font-family: Dosis, sans-serif;">Home</a></li>
@@ -67,14 +67,27 @@
     <div class="col"><a href="play/jetpack"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/image4.png"></a><a href="play/FNAF"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/image111.png"></a><a href="play/FNAF2"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/image12.png"></a><a href="play/FNAF3"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/image13.png"></a><a href="play/FNAF4"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/image14.png"></a></div>
     <div class="col"><a href="play/bloxorz"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/blox.png"></a><a href="play/ib"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/id.png"></a><a href="play/superhot"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/game-images/superhot.jpg"></a><a href="play/burritobison"><img data-bss-hover-animate="pulse" width="200" height="200" style="text-align: center;border-radius: 22px;margin-left: 5px;margin-bottom: 5px;margin-right: 5px;" src="assets/img/clipboard-image.png"></a></div>
     <footer class="text-center">
-        <div class="container text-muted py-4 py-lg-5"><small class="text-center" style="font-family: Dosis, sans-serif;font-weight: bold;color: rgb(244,244,244);">This is a beta, all games are not here.</small>
+        <div class="container text-muted py-4 py-lg-5">
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Update Info</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>This is Not In use.</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button></div>
+                    </div>
+                </div>
+            </div><small class="text-center" style="font-family: Dosis, sans-serif;font-weight: bold;color: rgb(244,244,244);">This is a beta, all games are not here.</small>
             <ul class="list-inline">
                 <li class="list-inline-item me-4"><a class="link-secondary" href="./math"><span style="color: rgb(255, 0, 0);">Math</span></a></li>
                 <li class="list-inline-item me-4"><a class="link-secondary" href="./apps"><span style="color: rgb(255, 0, 0);">Apps</span></a></li>
                 <li class="list-inline-item"><a class="link-secondary" href="./search" style="--bs-secondary: #fc00e1;--bs-secondary-rgb: 252,0,225;color: rgb(255,15,0);"><span style="color: rgb(255, 0, 0);">Search</span></a></li>
-                <li class="list-inline-item"><a class="link-secondary" href="https://github.com/Parcoil/nativegames.net-beta" style="--bs-secondary: #fc00e1;--bs-secondary-rgb: 252,0,225;color: rgb(255,15,0);"><span style="color: rgb(255, 0, 0);">Report a Bug</span></a></li>
+                <li class="list-inline-item"><a class="link-secondary" href="https://github.com/Parcoil/nativegames.net-beta/issues/new" style="--bs-secondary: #fc00e1;--bs-secondary-rgb: 252,0,225;color: rgb(255,15,0);margin-left: 4px;"><span style="color: rgb(255, 0, 0);">Report a Bug</span></a></li>
             </ul>
-            <ul class="list-inline">
+            <ul class="list-inline text-center">
                 <li class="list-inline-item me-4"><a href="https://twitter.com/Parcoilinc"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
                             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
                         </svg></a></li>
