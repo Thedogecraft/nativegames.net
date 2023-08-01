@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://beta.nativegames.net/apps.html</loc>
+        <loc>https://nativegames.net/apps.html</loc>
     </url>
     <url>
-        <loc>https://beta.nativegames.net/bookmarklets.html</loc>
+        <loc>https://nativegames.net/bookmarklets.html</loc>
     </url>
     <url>
-        <loc>https://beta.nativegames.net/formsuccess.html</loc>
+        <loc>https://nativegames.net/formsuccess.html</loc>
     </url>
     <url>
-        <loc>https://beta.nativegames.net/</loc>
+        <loc>https://nativegames.net/</loc>
     </url>
     <url>
-        <loc>https://beta.nativegames.net/math.html</loc>
+        <loc>https://nativegames.net/math.html</loc>
     </url>
     <url>
-        <loc>https://beta.nativegames.net/more.html</loc>
+        <loc>https://nativegames.net/more.html</loc>
     </url>
     <url>
-        <loc>https://beta.nativegames.net/search.html</loc>
+        <loc>https://nativegames.net/search.html</loc>
     </url>
 </urlset>
