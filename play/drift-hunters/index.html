@@ -1,34 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <title>Drift Hunters | 𝙉𝙖𝙩𝙞𝙫𝙚</title>
-   <script async src="https://arc.io/widget.min.js#5XPTU21J"><script data-goatcounter="https://parcoil.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script></script><script src="maintenance.js/"></script><script>
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js')
-  }
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8NZMM8WN9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W8NZMM8WN9');
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Drift Hunters" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./UnityLoader.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Drift Hunters</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "./dh.json");
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ItchIO.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body style="margin: 0; overflow: hidden;">
+  <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 100vw; height: 100vh; margin: 0;"></div>
+      <div id="gameContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative;"></div>
+      
     </div>
-    <!--<script src="/js/main.js"></script>-->
   </body>
-</html>
+</html

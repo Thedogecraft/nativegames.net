@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | NSMB-MarioVsLuigi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="text-align: center;margin: 0px;">
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: fixed; background: rgb(35, 31, 32);">
+        
+    <canvas id="unity-canvas" id="#canvas"width=335 height=667 style="width: 100%; height: 100%; background: #231F20"></canvas>
+      </div>
+      </div>
+    <script src="Build/MarioVsLuigi-WebGL.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/MarioVsLuigi-WebGL.data.unityweb",
+        frameworkUrl: "Build/MarioVsLuigi-WebGL.framework.js.unityweb",
+        codeUrl: "Build/MarioVsLuigi-WebGL.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "ipodtouch0218",
+        productName: "NSMB-MarioVsLuigi",
+        productVersion: "1.7.1.0-beta",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+    <script src="97c35fd0-ea33-4844-a283-b7a4c6942643" id="c4174e706ac02e24f4101391e93a5db9"></script>
+  </body>
+</html>
